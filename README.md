@@ -1,1 +1,1 @@
-In this repository, I upload tasks that I used to create protocols for my university.
+In this repository, I upload tasks that I used to create protocols for university.
