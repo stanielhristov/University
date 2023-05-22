@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Цикли в Java</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: #EFE0CB;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        pre {
+            background-color: #f2f2f2;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            text-align: left;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+
+        ul {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+            text-align: justify;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header  {
+            background-color: #CFA278;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    Цикли в Java
+</header>
+<center><img src="../images/Loops-in-Java-Programming_2.png"> </center>
+
+<p>Цикълът е конструкция в програмирането, която позволява на програмата да изпълни определен блок от код повече от веднъж. Цикълът се използва, когато е необходимо да се повторят определени действия многократно, докато се изпълни определено условие.</p>
+
+<h2>For цикъл</h2>
+<p>For цикълът се използва, когато е нужно да се изпълни определен блок от код точно определен брой пъти. За целта се задават начална стойност, крайна стойност и стъпка за промяна на индекса.</p>
+<h2>Пример:</h2>
+<pre>
+		for (int i = 1; i <= 5; i++) {
+			System.out.println("Стъпка " + i);
+		}
+	</pre>
+<ul>
+    <li><b>int i = 1;</b> - задава началната стойност на променливата, която се използва за цикъла.</li>
+    <h2>While цикъл</h2>
+    <p>While цикълът се използва, когато броят на итерациите не е известен предварително и зависи от изпълнението на определено условие. Докато условието е изпълнено, блокът от код в тялото на цикъла се изпълнява повторно и повторно.</p>
+    <h2>Пример:</h2>
+    <pre>
+	int i = 1;
+	while (i <= 5) {
+		System.out.println("Стъпка " + i);
+		i++;
+	}
+</pre>
+    <ul>
+        <li><b>int i = 1;</b> - задава началната стойност на променливата, която се използва за цикъла.</li>
+        <li><b>while (i <= 5) {</b> - задава условието за изпълнение на цикъла, т.е. докато стойността на променливата i е по-малка или равна на 5, блокът от код в тялото на цикъла се изпълнява.</li>
+        <li><b>System.out.println("Стъпка " + i);</b> - този блок от код се изпълнява за всяка стъпка на цикъла и извежда на екрана поредния номер на стъпката.</li>
+        <li><b>i++;</b> - задава стъпката за промяна на индекса на цикъла, т.е. след всяка итерация на цикъла стойността на променливата се увеличава с 1.</li>
+    </ul>
+    <h2>Foreach цикъл</h2>
+
+    <p>Foreach цикълът е специален вид цикъл в Java, който се използва за обхождане на елементите на масиви и колекции. Всяка итерация на цикъла взема поредния елемент от масива или колекцията и го обработва, като не е необходимо да се използва индекс.</p>
+
+    <h2>Пример:</h2>
+    <pre>
+		String[] names = {"Станиел", "Димитър", "Дария", "Анна"};
+		for (String name : names) {
+			System.out.println("Здравей, " + name + "!");
+		}
+	</pre>
+    <ul>
+        <li><b>String[] names = {"Станиел", "Димитър", "Дария", "Анна"};</b> - декларира и инициализира масив от тип String с четири елемента.</li>
+        <li><b>for (String name : names) {</b> - задава foreach цикъл, който обхожда елементите на масива и за всяка итерация взема поредния елемент и го записва в променливата name.</li>
+        <li><b>System.out.println("Здравей, " + name + "!");</b> - този блок от код се изпълнява за всяка итерация на цикъла и извежда на екрана поздравително съобщение за всяко име в масива.</li>
+    </ul>
+</ul>

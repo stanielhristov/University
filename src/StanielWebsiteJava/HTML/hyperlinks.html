@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+   </head>
+   <body>
+   <h1><a name="top">Работа</a> с хипервръзки (препратки) в HTML</h1>
+   
+   <p>Хипервръзки в HTML се поставят с помощта на тага < a >
+   
+   <p>Хипервръзка ( или връзка ) е дума, група от думи, или HTML изображение,<br>
+   върху което може да кликнете за да прескочите към друга страница/документ.<br>
+   По принцип ( jump link ) е просто връзка между различни обекти.<br> 
+   Обикновено това е връзка между стартова тема и целева тема, но тя може да<br>
+   бъде и връзка към PDF, може да бъде и връзка към външна уеб страница,<br> 
+   понеже е много гъвкава. Как се прави връзка – чрез <a> тага се дефинира <br>
+   HTML хипервръзка. A хипервръзка (или връзка) е дума, група от думи, или изображение,<br>
+   върху което може да кликнете за да прескочите към друга страница/документ.<br>
+   Когато преместите курсора върху хипервръзката, той ще се превърне в малка ръчичка (pointer).<br> 
+   Най-важният атрибут на <a> елементa е href атрибутa. Той дефинира адреса на връзката.<br>
+   
+   </p>
+   <h4>Хипервръзки към външни страници</h4>
+   <a href="https://www.abv.bg/">Отиди на ABV.bg</a><br>
+   <a href="https://uft-plovdiv.bg/">Университет по Хранетилни технологии- гр.Пловдив</a><br>
+   
+   <h4><a name="Middle">Хипервръзки към вътрешни страници</h4>
+    <a href="java.html">Текст</a><br>
+	<a href="list.html">Сцисъци</a><br>
+	<a href="color.html">Цветове </a><br>
+	<a href="images.html">Изображения</a><br>
+    <xmp>
+	<a href="java.html">Текст</a><br>
+	<a href="list.html">Сцисъци</a><br>
+	<a href="color.html">Цветове </a><br>
+	<a href="images.html">Изображения</a><br>
+	</xmp>
+	
+	
+   <h4>Хипервръзки към имейл адрес</h4>
+   
+   <a href="mailto: ivcheto0101@abv.bg">Пишете ми</a><br>
+   
+   <h4>Изображение като хипервръзка</h4>
+   
+   <xmp>
+   <a href="https://uft-plovdiv.bg/"><img src="logo.jpg">
+   </xmp>
+   
+   <a href="https://uft-plovdiv.bg/" target="_blank"><img src="logo.jpg">
+   <a href="https://uft-plovdiv.bg/" target="_self"><img src="logo.jpg">
+   
+   <h4>Част от изображение като хипервръзка</h4>
+   <img src="cars.jpg" usemap="#cars_sumbols">
+   
+   <map name="cars_sumbols" >
+   <area shape="rect" coords="1011,154,936,8" href="https://www.rolls-roycemotorcars.com/"> </area>
+   <area shape="circle" coords="373,377,62"  href="https://www.bmw.bg/bg/index.html"></area>
+   <area shape="poly" coords="313,657,307,625,449,625,434,668,398,689,353,683,329,674" href="https://www.mini.bg/"></area>
+   </map>
+   
+   <h4>Хипервръзка към котва в същата страница</h4>
+   <a href="#top">Към началото</a><br>
+   <a href="#Middle">Към средата</a><br>
+   
+   </body>
+   </html>

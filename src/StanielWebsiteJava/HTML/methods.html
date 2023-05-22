@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Методи в Java</title>
+    <style>
+        body {
+            background-color: #165061;
+        }
+        table {
+            background-color: white;
+        }
+        #container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        code {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            padding: 2px 4px;
+        }
+        header {
+            background-color: #1E5666;
+            color: #FBB33C;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <header>
+        <h1>Методи в Java</h1>
+    </header>
+    <img src="../images/methodslogo.png">
+
+    <h2>Методи за работа със символи</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Метод</th>
+            <th>Описание</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><code>charCodeAt()</code></td>
+            <td>Връща Unicode стойността на символа на даден индекс в низ</td>
+        </tr>
+        <tr>
+            <td><code>fromCharCode()</code></td>
+            <td>Създава символ от Unicode стойността му</td>
+        </tr>
+        <tr>
+            <td><code>toUpperCase()</code></td>
+            <td>Преобразува символ в главна буква</td>
+        </tr>
+        <tr>
+            <td><code>toLowerCase()</code></td>
+            <td>Преобразува символ в малка буква</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Пример:</p>
+    <pre>
+        var str = "Hello World!";
+        var n = str.charCodeAt(0);
+      </pre>
+
+    <h2>Методи за работа със символни низове</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Метод</th>
+            <th>Описание</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><code>charAt()</code></td>
+        <td>Връща символа на даден индекс в низа</td>
+        </tr>
+        <tr>
+            <td><code>concat()</code></td>
+            <td>Конкатенира два или повече низа</td>
+        </tr>
+        <tr>
+            <td><code>endsWith()</code></td>
+            <td>Проверява дали низът завършва с определен низ</td>
+        </tr>
+        <tr>
+            <td><code>indexOf()</code></td>
+            <td>Връща индекса на първото срещане на даден низ в друг низ</td>
+        </tr>
+        <tr>
+            <td><code>lastIndexOf()</code></td>
+            <td>Връща индекса на последното срещане на даден низ в друг низ</td>
+        </tr>
+        <tr>
+            <td><code>replace()</code></td>
+            <td>Заменя срещане на даден низ с друг низ</td>
+        </tr>
+        <tr>
+            <td><code>slice()</code></td>
+            <td>Изрязва част от низа и връща нов низ</td>
+        </tr>
+        <tr>
+            <td><code>split()</code></td>
+            <td>Разделя низ на масив от низове по определен разделител</td>
+        </tr>
+        <tr>
+            <td><code>startsWith()</code></td>
+            <td>Проверява дали низът започва с определен низ</td>
+        </tr>
+        <tr>
+            <td><code>substring()</code></td>
+            <td>Изрязва част от низа и връща нов низ</td>
+        </tr>
+        <tr>
+            <td><code>toLowerCase()</code></td>
+            <td>Преобразува низа в малки букви</td>
+        </tr>
+        <tr>
+            <td><code>toUpperCase()</code></td>
+            <td>Преобразува низа в главни букви</td>
+        </tr>
+        <tr>
+            <td><code>trim()</code></td>
+            <td>Изтрива празните интервали от началото и края на низа</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Пример:</p>
+    <pre>
+    var str = "Hello World!";
+    var n = str.indexOf("World");
+  </pre>
+
+    <h2>Методи за работа с числа</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Метод</th>
+            <th>Описание</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><code>parseInt()</code></td>
+            <td>Преобразува низ в цяло число</td>
+        </tr>
+        <tr>
+            <td><code>parseFloat()</code></td>
+            <td>Преобразува низ в число с плаваща запетая</td>
+        </tr>
+        <tr>
+            <td><code>toFixed()</code></td>
+            <td>Форматира число с определен брой десетични знаци</td>
+        </tr>
+        <tr>
+            <td><code>toPrecision()</code></td>
+            <td>Форматира число с определен брой цифри</td>
+        </tr>
+        <tr>
+            <td><code>toString()</code></td>
+            <td>Преобразува число в низ</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Пример:</p>
+    <pre>
+var num = 123.456;
+var n = num.toFixed(2);
+</pre>
+    <h2>Методи за работа с масиви</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Метод</th>
+            <th>Описание</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><code>concat()</code></td>
+            <td>Конкатенира два или повече масива</td>
+        </tr>
+        <tr>
+            <td><code>every()</code></td>
+            <td>Проверява дали всички елементи на масива отговарят на дадено условие</td>
+        </tr>
+        <tr>
+            <td><code>filter()</code></td>
+            <td>Създава нов масив с всички елементи, които отговарят на дадено условие</td>
+        </tr>
+        <tr>
+            <td><code>forEach()</code></td>
+            <td>Изпълнява определена функция за всеки елемент на масива</td>
+        </tr>
+        <tr>
+            <td><code>indexOf()</code></td>
+            <td>Връща индекса на първото срещане на даден елемент в масива</td>
+        </tr>
+        <tr>
+            <td><code>join()</code></td>
+            <td>Обединява всички елементи на масива в един низ, разделени с определен знак</td>
+        </tr>
+        <tr>
+            <td><code>map()</code></td>
+            <td>Създава нов масив, като извършва определена функция за всеки елемент на масива</td>
+        </tr>
+        <tr>
+            <td><code>pop()</code></td>
+            <td>Премахва последния елемент на масива и го връща</td>
+        </tr>
+        <tr>
+            <td><code>push()</code></td>
+            <td>Добавя елемент(и) в края на масива и връща новата дължина на масива</td>
+        </tr>
+        <tr>
+            <td><code>reduce()</code></td>
+            <td>Използва функция за намаляване и връща едно резултатно стойност</td>
+        </tr>
+        <tr>
+            <td><code>reverse()</code></td>
+            <td>Обръща реда на елементите в масива</td>
+        </tr>
+        <tr>
+            <td><code>shift()</code></td>
+            <td>Премахва първия елемент на масива и го връща</td>
+        </tr>
+        <tr>
+            <td><code>slice()</code></td>
+            <td>Извлича част от масива и връща нов масив</td>
+        </tr>
+        <tr>
+            <td><code>some()</code></td>
+            <td>Проверява дали поне един елемент отговаря на дадено условие</td>
+        </tr>
+        <tr>
+            <td><code>sort()</code></td>
+            <td>Сортира елементите на масива</td>
+        </tr>
+        <tr>
+            <td><code>splice()</code></td>
+            <td>Добавя или премахва елементи от масива</td>
+        </tr>
+        <tr>
+            <td><code>toString()</code></td>
+            <td>Преобразува масива в низ</td>
+        </tr>
+        <tr>
+            <td><code>unshift()</code></td>
+            <td>Добавя елемент(и) в началото на масива и връща новата дължина на масива</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Пример:</p>
+    <pre>
+    var arr = [1, 2, 3, 4, 5];
+    var sum = arr.reduce(function(a, b) {
+      return a + b;
+    });
+  </pre>
+
+    <h2>Методи за работа с обекти</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Метод</th>
+            <th>Описание</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><code>hasOwnProperty()</code></td>
+            <td>Проверява дали обектът има свойство с определено име</td>
+        </tr>
+        <tr>
+            <td><code>isPrototypeOf()</code></td>
+            <td>Проверява дали обектът е прототип на друг обект</td>
+        </tr>
+        <tr>
+            <td><code>propertyIsEnumerable()</code></td>
+            <td>Проверява дали определено свойство на обекта може да бъде изброено при обхождане с for...in цикъл</td>
+        </tr>
+        <tr>
+            <td><code>toLocaleString()</code></td>
+            <td>Връща низ, представляващ обекта</td>
+        </tr>
+        <tr>
+            <td><code>toString()</code></td>
+            <td>Връща низ, представляващ обекта</td>
+        </tr>
+        <tr>
+            <td><code>valueOf()</code></td>
+            <td>Връща примитивната стойност на обекта</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Пример:</p>
+    <pre>
+var person = {firstName: "John", lastName: "Doe", age: 25};
+console.log(person.hasOwnProperty("firstName"));
+console.log(person.propertyIsEnumerable("age"));
+console.log(person.toString());
+</pre>
+    <h2>Методи за работа с дати</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Метод</th>
+            <th>Описание</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><code>getDate()</code></td>
+            <td>Връща деня от месеца (1-31)</td>
+        </tr>
+        <tr>
+            <td><code>getDay()</code></td>
+            <td>Връща деня от седмицата (0-6)</td>
+        </tr>
+        <tr>
+            <td><code>getFullYear()</code></td>
+            <td>Връща годината (4 цифри)</td>
+        </tr>
+        <tr>
+            <td><code>getHours()</code></td>
+            <td>Връща часа (0-23)</td>
+        </tr>
+        <tr>
+            <td><code>getMilliseconds()</code></td>
+            <td>Връща милисекундите (0-999)</td>
+        </tr>
+        <tr>
+            <td><code>getMinutes()</code></td>
+            <td>Връща минутите (0-59)</td>
+        </tr>
+        <tr>
+            <td><code>getMonth()</code></td>
+            <td>Връща месеца (0-11)</td>
+        </tr>
+        <tr>
+            <td><code>getSeconds()</code></td>
+            <td>Връща секундите (0-59)</td>
+        </tr>
+        <tr>
+            <td><code>getTime()</code></td>
+            <td>Връща броя милисекунди, изминали от 1 януари 1970 г. до датата на обекта</td>
+        </tr>
+        <tr>
+            <td><code>toDateString()</code></td>
+            <td>Връща низ, представляващ датата (ден, месец, година)</td>
+
+            <td><code>toLocaleDateString()</code></td>
+            <td>Връща низ, представляващ датата, в зависимост от локалните настройки на компютъра</td>
+        </tr>
+        <tr>
+            <td><code>toLocaleTimeString()</code></td>
+            <td>Връща низ, представляващ времето, в зависимост от локалните настройки на компютъра</td>
+        </tr>
+        <tr>
+            <td><code>toString()</code></td>
+            <td>Връща низ, представляващ датата и времето</td>
+        </tr>
+        <tr>
+            <td><code>valueOf()</code></td>
+            <td>Връща броя милисекунди, изминали от 1 януари 1970 г. до датата на обекта</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Пример:</p>
+    <pre>
+    var today = new Date();
+    console.log(today.getFullYear()); // 2023
+    console.log(today.getMonth()); // 4
+    console.log(today.getDate()); // 5
+    console.log(today.getDay()); // 4
+    console.log(today.getHours()); // 14
+    console.log(today.getMinutes()); // 27
+    console.log(today.getSeconds()); // 45
+    console.log(today.getMilliseconds()); // 123
+  </pre>
+
+    <h2>Методи за работа с математически операции</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Метод</th>
+            <th>Описание</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td><code>abs()</code></td>
+            <td>Връща абсолютната стойност на числото</td>
+        </tr>
+        <tr>
+            <td><code>ceil()</code></td>
+            <td>Връща най-близкото цяло число, по-голямо от или равно на даденото число</td>
+        </tr>
+        <tr>
+            <td><code>floor()</code></td>
+            <td>Връща най-близкото цяло число, по-малко от или равно на даденото число</td>
+        </tr>
+        <tr>
+            <td><code>max()</code></td>
+            <td>Връща по-голямото от две или повече числа</td>
+        </tr>
+        <tr>
+            <td><code>min()</code></td>
+            <td>Връща по-малкото от две или повече числа</td>
+        </tr>
+        <tr>
+            <td><code>pow()</code></td>
+            <td>Връща стойността на числото, повдигнато на указаната степен</td>
+        </tr>
+        <tr>
+            <td><code>random()</code>
+            </td>
+            <td>Връща случайно число между 0 и 1</td>
+        </tr>
+        <tr>
+            <td><code>round()</code></td>
+            <td>Връща най-близкото цяло число, към което е по-близко даденото число</td>
+        </tr>
+        <tr>
+            <td><code>sqrt()</code></td>
+            <td>Връща квадратен корен на даденото число</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>Пример:</p>
+    <pre>
+        console.log(Math.abs(-10));
+        console.log(Math.ceil(3.14));
+        console.log(Math.floor(3.99));
+        console.log(Math.max(5, 7, 3, 9, 2));
+        console.log(Math.min(5, 7, 3, 9, 2));
+        console.log(Math.pow(2, 3));
+        console.log(Math.random());
+        console.log(Math.round(3.5));
+        console.log(Math.sqrt(16));
+      </pre>
+</div>

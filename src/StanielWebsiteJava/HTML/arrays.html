@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Масиви в Java</title>
+    <meta charset="utf-8">
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #614486;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            background-color: #58538D;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+        code {
+            background-color: #ddd;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-size: 18px;
+        }
+        table {
+            border-collapse: collapse;
+            margin-bottom: 50px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        header {
+            background-color: #5A508C;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        pre {
+            background-color: #f2f2f2;
+            padding: 1rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.8rem;
+            line-height: 1.2;
+            text-align: left;
+            border-radius: 3px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Масиви в Java</h1>
+</header>
+<center><img src="../images/arraysinjava.jpg" width="750"> </center>
+
+<h2>Какво е масив?</h2>
+<p>Масивът в Java е структура от данни, която позволява да се съхраняват множество от елементи от един и същи тип. Всяко отделно поле в масива може да се достъпва по индекс (номер на полето) в масива. Индексите в масива започват от 0.</p>
+
+<h2>Деклариране на масиви</h2>
+<p>За да декларирате масив в Java, трябва да използвате ключовата дума <code>new</code>, последвана от типа на елементите в масива и броя на елементите в масива:</p>
+<code>тип_на_елементите[] име_на_масива = new тип_на_елементите[брой_елементи];</code>
+<p>Пример:</p>
+<code>int[] myArray = new int[5];</code>
+
+<h2>Инициализация на масиви</h2>
+<p>Можете да инициализирате масива, като зададете стойности на всяко поле в масива:</p>
+<code>тип_на_елементите[] име_на_масива = {стойност1, стойност2, ..., стойностN};</code>
+<p>Пример:</p>
+<code>int[] myArray = {1, 2, 3, 4, 5};</code>
+
+<h2>Достъп до
+    <h2>Примери за използване на методи за масиви в Java:</h2>
+    <p>Нека имаме масив от цели числа:</p>
+    <pre>
+int[] numbers = {5, 2, 8, 1, 9};
+</pre>
+
+    <p>Следните два реда код ще сортират масива в нарастващ ред:</p>
+    <pre>
+Arrays.sort(numbers);
+System.out.println(Arrays.toString(numbers)); // ще изведе [1, 2, 5, 8, 9]
+</pre>
+
+    <p>Методът <code>binarySearch</code> може да се използва, за да се провери дали дадено число се съдържа в масива:</p>
+    <pre>
+int index = Arrays.binarySearch(numbers, 5);
+if (index >= 0) {
+    System.out.println("5 е намерено на индекс " + index);
+} else {
+    System.out.println("5 не е намерено в масива");
+}
+</pre>
+
+    <p>Следните редове код ще създадат копие на масива и ще го запълнят със стойност 0:</p>
+    <pre>
+int[] copy = Arrays.copyOf(numbers, 10);
+Arrays.fill(copy, 0);
+System.out.println(Arrays.toString(copy)); // ще изведе [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+</pre>
+
+    <p>Методът <code>equals</code> ще сравни два масива и ще върне <code>true</code>, ако те са еднакви:</p>
+    <pre/>
+    <h2>Достъп до елементи в масива</h2>
+    <p>За да достъпите елемент в масива, трябва да използвате индекса на съответното поле:</p>
+    <code>име_на_масива[индекс] = стойност;</code>
+    <p>Пример:</p>
+    <code>int[] myArray = new int[5];</code>
+    <code>myArray[0] = 1;</code>
+    <code>myArray[1] = 2;</code>
+    <code>myArray[2] = 3;</code>
+    <code>myArray[3] = 4;</code>
+    <code>myArray[4] = 5;</code>
+    <p>Това ще инициализира масива със стойности от 1 до 5.</p>
+    <h2>Многомерни масиви</h2>
+    <p>Многомерният масив в Java е масив, който има един или повече масива като елементи. Това позволява да се съхраняват структури от данни с множество измерения. За да декларирате многомерен масив, трябва да използвате следния синтаксис:</p>
+    <code>тип_на_елементите[][] име_на_масива = new тип_на_елементите[брой_редове][брой_колони];</code>
+    <p>Пример:</p>
+    <code>int[][] myArray = new int[2][3];</code>
+    <p>Това ще създаде многомерен масив с 2 реда и 3 колони.</p>
+    <h2>Инициализация на многомерни масиви</h2>
+    <p>Можете да инициализирате многомерни масиви като зададете стойности на всяко поле в масива:</p>
+    <code>тип_на_елементите[][] име_на_масива = {{стойност11, стойност12, ..., стойност1N}, {стойност21, стойност22, ..., стойност2N}, ..., {стойностM1, стойностM2, ..., стойностMN}};</code>
+    <p>Пример:</p>
+    <code>int[][] myArray = {{1, 2, 3}, {4, 5, 6}};</code>
+    <p>Това ще създаде многомерен масив с 2 реда и 3 колони и ще го инициализира със стойности от 1 до 6.</p> </h2>

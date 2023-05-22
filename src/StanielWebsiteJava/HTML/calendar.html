@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Календар</title>
+  <style>
+    body {
+      font-family: Tahoma, sans-serif;
+      text-align: center;
+    }
+    table {
+      margin-top: 50px;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      border: 1px solid black;
+    }
+    th {
+      background-color: #ddd;
+    }
+    td {
+      cursor: pointer;
+    }
+    td:hover {
+      background-color: #eee;
+    }
+    .today {
+      background-color: #1E5666;
+    }
+  </style>
+</head>
+<body>
+<h1>Календар</h1>
+<div id="calendar"></div>
+<script src="../JavaScript/calendar.js"></script>
+</body>
+</html>
